@@ -51,6 +51,9 @@ client.connect(err => {
           })
       })
   })
+  app.get('/',(req, res)=>{
+      res.send('Hello')
+  })
   app.post('/addServices',(req, res)=>{
       const addedService = req.body
       customerServices.insertOne(addedService)
