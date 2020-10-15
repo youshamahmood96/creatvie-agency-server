@@ -109,4 +109,4 @@ app.post('/adminList',(req, res)=>{
 
 
 
-app.listen(prcess.env.PORT || port)
+app.listen(process.env.PORT || port)
